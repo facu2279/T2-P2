@@ -1,3 +1,5 @@
+
+
 #include "../include/cadena.h"
 #include "../include/info.h"
 #include "../include/utils.h"
@@ -6,13 +8,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-
-/*
-  Devuelve 'true' si y solo si en 'cad' hay un elemento cuyo campo natural es 'elem'.
-*/
 bool pertenece(nat elem, TCadena cad){
-    if (!esVaciaCadena(cad))
-    {
+    if (!esVaciaCadena(cad)) {
         TLocalizador ptr = inicioCadena(cad);
         while (siguiente(ptr,cad) != NULL && natInfo(infoCadena(ptr,cad)) != elem)
         {
@@ -25,9 +22,7 @@ bool pertenece(nat elem, TCadena cad){
         //delete ptr;
 
         return  (res == elem);
-    }
-    else
-    {
+    } else {
         return false;
     }    
 }

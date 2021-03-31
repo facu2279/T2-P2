@@ -9,7 +9,7 @@
 #include <stdlib.h>
 
 
-struct nodo
+struct nodoCadena
 {
     TInfo dato;
     TLocalizador anterior;
